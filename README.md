@@ -61,7 +61,7 @@ Here are some additional resources that helped me understand the concepts better
 
 **Task 1: Your first pull request**
 - **Instructions**
-1. Clone this repository on you local machine `git clone https://github.com/ttobio/Genomics-WES-Project.git`
+1. Clone the repository on you local machine as a fork 
 2. Create a new file in the assignments folder with your user id --> example u00.txt
 3. Add and commit your changes and pull a request
 - *You can type whatever you want in this file, just don't add confdential info*
@@ -99,3 +99,40 @@ Here are some additional resources that helped me understand the concepts better
 
 
 - **Reflection:** Write a short reflection (2-3 sentences) about what you learned today and any challenges you encountered. Share this in the discussion forum.
+
+## Day 5: File formats
+- **Instructions**
+#### - Here are some YT videos that will help you understand the file formats we are going to work with 
+1. [FASTA & FASTQ](https://youtu.be/xYEre9DtIqA?si=MsgBaiiCILqNry5-)
+2. [VCF & gVCF](https://youtu.be/cBDZSGf9HRE?si=Oi5WkQCZrxhDuw40)
+3. [SAM/BAM](https://youtu.be/vh6l9aPFUgU?si=F_T-ltv6TPh00Lc9)
+4. [GFF3 & GTF](https://youtu.be/vh6l9aPFUgU?si=F_T-ltv6TPh00Lc9)
+
+
+- **Reflection:** Post some interesting facts about the file formats that you learned today on the discussion panel
+
+
+## Project-1: WES workflow 
+- **Instructions**
+### We will try to implement this workflow in GALAXY on our local machines [link](https://training.galaxyproject.org/training-material/topics/variant-analysis/tutorials/exome-seq/tutorial.html#data-preparation)
+0. In the assignment folder, make a folder with the usernames of the group, for example --> u010522 and have this folder architecture:
+
+├── workflow.md
+
+├── output
+
+├── plots
+
+└── scripts --> might be scripts that helped you in the work flow (not single commands)
+1. Download thr raw reads from this drive [link](https://drive.google.com/drive/folders/1iAThBHrCuCx-j6IPG60t74afDhmhzr41?usp=drive_link) 
+#### Note: I would've loved to store the data on this repo but the limit for upload is 100Mb
+#### There are 6 files for three poeple there --> mother, father, and proband
+2. Check the tools in the tutorial and keep in mind the following:
+  * Check if the tool is part of GATK and if not, does it have a replacement in GATK.
+  * If not, install it your self on your local machine and include a link for the installation and the steps you followed.
+3. Run each tool and explain the rationale behind each step and why you used a certain parameters for each tool. This should be included in your workflow.md
+4. all the output files are stored in the output folder and sane idea for the plots. if you used any scripts from documentations  or a YT video, include the link the md file and put the script in the script folder.
+5. The steps in the md file you will provide must be reproducable, meaning if someone has the tools installed and ran the same commands, it should produce the same output and the md file should contain all the details for someone to be able to both follow it and understand the rationale behind it.
+
+
+- **Reminder:** If you had any problems, search the internet and if you didn't find a solution, feel free to post it in the issues or on the WhatsApp group.
