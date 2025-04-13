@@ -191,3 +191,18 @@ Among the lncRNAs, LINC01128 stood out with the highest number of upstream and i
 Other significantly mutated lncRNAs included LINC00115, RP5-857K21.4, RPL7P9, and NDUFS5P2-RPL7P9. These lncRNAs showed mutations in intronic and regulatory regions, which may influence alternative splicing or enhancer activity. While RPL7P9 is a pseudogene and NDUFS5P2-RPL7P9 represents a fusion region with unclear function, their mutation patterns suggest potential indirect effects on bone metabolism.
 
 In conclusion, this analysis supports the hypothesis that non-coding variants especially within lncRNAs may contribute to the genetic architecture of complex diseases such as osteoporosis. The results emphasize the importance of expanding genomic studies beyond protein-coding regions to discover novel regulatory elements and mechanisms involved in disease susceptibility and biological function.
+
+## References and Tutorials used: 
+- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
+- [GATK](https://gatk.broadinstitute.org/)  
+- [BWA](http://bio-bwa.sourceforge.net/)  
+- [Samtools](http://www.htslib.org/)
+- [picard](https://github.com/broadinstitute/picard/releases/latest/download/picard.jar )
+- [FastQC & Trimmomatic - Dr. Mohamed Abdelmottaleb's Training]
+- [BWA Alignment Tutorial](https://youtu.be/iXFeyexbJ44?si=F9UKO2Y6prLrCeAr)
+- [part2](https://youtu.be/P9iF_2nDLGg?si=TF0JQBsmuMR69uQE)  
+- [part3](https://youtu.be/XH_GU5bQ7TY?si=4D-YphlqJ_069oTf)
+- [GATK](https://youtu.be/iHkiQvxyr5c?si=yyxp7VM_i9QOilj0)
+- [Variant Annotation with bcftools & snpEff - Part 1](https://youtu.be/zMNZk14WxXE?si=eLMeYARm-C7jr9Zo)  
+- [Variant Annotation with bcftools & snpEff - Part 2](https://youtu.be/-rmreyRAbkE?si=TYOUzU0kEE_vfZ_F)
+- [The custom Python script for variant summarization was developed with assistance from ChatGPT]
