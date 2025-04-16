@@ -217,4 +217,16 @@ Other significantly mutated lncRNAs included LINC00115, RP5-857K21.4, RPL7P9, an
 
 ---
 
-> _For questions or collaborations, feel free to reach out to Rana Nasser._
+## References and Tutorials used: 
+- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)  
+- [GATK](https://gatk.broadinstitute.org/)  
+- [BWA](http://bio-bwa.sourceforge.net/)  
+- [Samtools](http://www.htslib.org/)
+- [picard](https://github.com/broadinstitute/picard/releases/latest/download/picard.jar )
+- [FastQC & Trimmomatic - Dr. Mohamed Abdelmottaleb's Training]
+- [BWA Alignment Tutorial](https://youtu.be/iXFeyexbJ44?si=F9UKO2Y6prLrCeAr)
+- [part2](https://youtu.be/P9iF_2nDLGg?si=TF0JQBsmuMR69uQE)  
+- [part3](https://youtu.be/XH_GU5bQ7TY?si=4D-YphlqJ_069oTf)
+- [GATK](https://youtu.be/iHkiQvxyr5c?si=yyxp7VM_i9QOilj0)
+- [Variant Annotation with bcftools & snpEff - Part 1](https://youtu.be/zMNZk14WxXE?si=eLMeYARm-C7jr9Zo)  
+- [Variant Annotation with bcftools & snpEff - Part 2](https://youtu.be/-rmreyRAbkE?si=TYOUzU0kEE_vfZ_F)
