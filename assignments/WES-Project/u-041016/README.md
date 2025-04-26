@@ -1,10 +1,10 @@
 # Whole-Exome Sequencing (WES) Analysis Pipeline for Osteopetrosis Variant Detection
 
-This repository contains a pipeline for processing whole-exome sequencing (WES) data from a family trio (proband, father, mother) to identify candidate variants associated with osteopetrosis, a rare genetic bone disorder. The pipeline starts with raw FASTQ files, performs alignment, variant calling, annotation, and filtering, and generates a report of potential causative variants under autosomal recessive and compound heterozygous inheritance models.
+This repository contains a pipeline for processing whole-exome sequencing (WES) data from a family trio (proband, father, mother) to identify candidate variants associated with osteopetrosis, a rare genetic bone disorder. The pipeline starts with raw FASTQ files, performs alignment, variant calling, annotation, and filtering, and generates a report of potential causative variants under the autosomal recessive inheritance model.
 
 ## Overview
 
-The pipeline consists of 12 steps, implemented as Bash scripts, to process WES data for a trio where the proband is affected by osteopetrosis, and the consanguineous parents are unaffected. The goal is to identify rare, high-impact variants in known osteopetrosis genes (e.g., `TCIRG1`, `CLCN7`, `OSTM1`, `TNFSF11`, `SNX10`).
+The pipeline consists of 12 steps, implemented as Bash scripts, to process WES data for a trio where the proband is affected by osteopetrosis, and the consanguineous parents are unaffected. The goal is to identify rare, high-impact variants in known osteopetrosis genes.
 
 ## Prerequisites
 
@@ -48,20 +48,7 @@ The pipeline consists of 12 steps, implemented as Bash scripts, to process WES d
 
 The pipeline processes FASTQ files through alignment, variant calling, annotation, and variant filtering. Each step is implemented as a Bash script, with quality control performed manually or scripted separately.
 
-### Step 1: Quality Control
-
-- **Tools**: FastQC, MultiQC
-- **Description**: Assesses the quality of raw FASTQ files for the trio (`father_R1.fq.gz`, `father_R2.fq.gz`, `mother_R1.fq.gz`, `mother_R2.fq.gz`, `proband_R1.fq.gz`, `proband_R2.fq.gz`) to identify issues like low-quality bases or adapter contamination.
-- **Command**:
-
-  ```bash
-  mkdir fastqc_results
-  fastqc -o fastqc_results *.fq.gz
-  multiqc fastqc_results -o multiqc_report
-  ```
-- **Output**: `fastqc_results/*.html`, `multiqc_report/multiqc_report.html`
-
-### Step 2: Download Data (`1_data.sh`)
+### Step 1: Download Data (`1_data.sh`)
 
 - **Description**: Downloads raw FASTQ files for the trio from Zenodo.
 - **Code**:
@@ -82,6 +69,19 @@ The pipeline processes FASTQ files through alignment, variant calling, annotatio
   ```bash
   ./1_data.sh
   ```
+
+### Step 1: Quality Control
+
+- **Tools**: FastQC, MultiQC
+- **Description**: Assesses the quality of raw FASTQ files for the trio (`father_R1.fq.gz`, `father_R2.fq.gz`, `mother_R1.fq.gz`, `mother_R2.fq.gz`, `proband_R1.fq.gz`, `proband_R2.fq.gz`) to identify issues like low-quality bases or adapter contamination.
+- **Command**:
+
+  ```bash
+  mkdir fastqc_results
+  fastqc -o fastqc_results *.fq.gz
+  multiqc fastqc_results -o multiqc_report
+  ```
+- **Output**: `fastqc_results/*.html`, `multiqc_report/multiqc_report.html`
 
 ### Step 3: Trim Reads (`2_trim.sh`)
 
@@ -487,7 +487,6 @@ wes_pipeline/
 ├── trio.ped
 ├── trio.db
 ├── autosomal_recessive_candidates.tsv
-├── compound_het_candidates.tsv
 ```
 
 ## Usage
