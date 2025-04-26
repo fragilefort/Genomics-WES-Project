@@ -448,8 +448,8 @@ The pipeline processes FASTQ files through alignment, variant calling, annotatio
   head -n 10 "$AR_TSV" | column -t
   echo "Candidate variant detection complete!"
   ```
-- **Explanation**: Uses `bcftools` to filter variants based on inheritance patterns, outputting VCF and TSV files. Note: `INFO/max_aaf_all` is incorrect (should use `CSQ`’s `MAX_AF`).
-- **Output**: `autosomal_recessive_candidates.vcf`, `autosomal_recessive_candidates.tsv`, `compound_het_temp.vcf`, `compound_het_candidates.tsv`
+- **Explanation**: Uses `bcftools` to filter variants based on inheritance patterns, outputting VCF and TSV files.
+- **Output**: `autosomal_recessive_candidates.vcf`, `autosomal_recessive_candidates.tsv`
 - **Command**:
 
   ```bash
